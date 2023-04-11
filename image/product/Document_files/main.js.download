@@ -1,0 +1,30 @@
+const toggler = document.querySelector('.toggler');
+const menu_toggler = document.querySelector('.menu-toggler');
+
+toggler.onclick = function(){
+    menu_toggler.classList.toggle('open');
+    toggler.classList.toggle('active');
+}
+
+const modalViews = document.querySelectorAll('.modal-content'),
+    modalBtns = document.querySelectorAll('.modalBtns'),
+    modalCloses = document.querySelectorAll('.modalCloses')
+
+let modal = function(modalClick) {
+    modalViews[modalClick].classList.add('active-modal')
+}
+
+modalBtns.forEach((modalBtn, i) => {
+    modalBtn.addEventListener('click', () =>{
+        modal(i)
+    })
+})
+
+modalCloses.forEach((modalClose) => {
+    modalClose.addEventListener('click', () => {
+        modalViews.forEach((modalView) => {
+            modalView.classList.remove('active-modal')
+        })
+    })
+})
+
