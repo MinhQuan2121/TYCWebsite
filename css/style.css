@@ -8,13 +8,15 @@
     --first-color: #779324;
     --first-color-lighter: #9DC02E;
     --first-color-alt: #BDD468;
-    --title-color: #313030;
+    --title-color: var(--main-color);
     --text-color: #333333;
     --text-color-light: #ffffff;
     --body-color: #232621;
     --transition-long: 0.5s;
     --transition-short: 0.3s;
     --screen-margin: 0 100px;
+    --main-color: #212121;
+    --main-color-light: #ffffff;
 }
 
 html {
@@ -98,7 +100,7 @@ header .navigation .branding-logo {
 }
 
 header .navigation .branding-logo h1 {
-    color: white;
+    color: var(--text-color-light);
     font-size: 20px;
     font-family: 'SF UI TEXT', sans-serif;
     letter-spacing: -1px;
@@ -342,7 +344,7 @@ header .navigation .right-menu .menu-toggler.open li a {
 .home.section .home-container .home-content .home-button:hover {
     background: #fff;
     box-shadow: inset 400px 0 0 0 #ffffff;
-    color: #212121;
+    color: var(--main-color);
 }
 
 @media screen and (max-width: 1024px) {
@@ -370,7 +372,12 @@ header .navigation .right-menu .menu-toggler.open li a {
         font-size: 15px;
         margin: 20px 0 20px 0;
     }
+
+    .home.section .home-container {
+        top: 5%;
+    }
 }
+
 
 /* ABOUT */
 
@@ -378,18 +385,18 @@ header .navigation .right-menu .menu-toggler.open li a {
     position: relative;
     z-index: -1;
     width: 100%;
-    height: 50vh;
-    background: #212121;
+    height: 60vh;
+    background: var(--main-color);
 }
 
 .about.section .about-container {
     position: absolute;
     left: 0; right: 0;
     top: 25%;
-    transform: translateY(-22%);
+    transform: translateY(-14%);
     width: 100%;
     height: 45vh;
-    padding: var(--screen-margin);
+    padding: 0 100px;
     display: flex;
 }
 
@@ -401,11 +408,7 @@ header .navigation .right-menu .menu-toggler.open li a {
 }
 
 .about.section .about-container .about-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
-    margin-left: 50px;
+    margin: 0 auto;
 }
 
 .about.section .about-container .about-content .about-title {
@@ -416,7 +419,7 @@ header .navigation .right-menu .menu-toggler.open li a {
     color: var(--text-color-light);
     font-weight: 400;
     font-size: 18px;
-    width: 700px;
+    max-width: 700px;
 }
 
 /* @media screen and (max-width: 768px) {
@@ -425,6 +428,31 @@ header .navigation .right-menu .menu-toggler.open li a {
         margin: 0 auto;
     }
 } */
+
+
+
+@media screen and (max-width: 600px) {
+    .about.section .about-container .about-content .about-description {
+        font-size: 14px;
+    }
+
+    .about.section .about-container {
+        transform: translateY(-10vh);
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .about.section .about-container {
+        transform: translateY(-14vh);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about.section .about-container {
+        height: 55px;
+        padding: 30px;
+    }
+}
 
 @media screen and (max-width: 1024px) {
     .about.section,
@@ -435,6 +463,16 @@ header .navigation .right-menu .menu-toggler.open li a {
         display: none;
     }
 }
+
+
+@media screen and (max-width: 320px) {
+    .about.section,
+    .about.section .about-container {
+        height: 50vh;
+        transform: translateY(-14vh);
+    }
+}
+
 
 /* CLASSIFY */
 
@@ -464,10 +502,12 @@ header .navigation .right-menu .menu-toggler.open li a {
 .classify.section .classify-container .box-container {
     position: absolute;
     top: 0;
+    margin: 0 100px;
+    top: 5vh;
 }
 
-.classify.section .classify-container .main-title {
-    top: 5vh;
+.classify.section .classify-container .main-title .main-text {
+    white-space: nowrap;
 }
 
 .classify.section .classify-container .box-container {
@@ -475,14 +515,44 @@ header .navigation .right-menu .menu-toggler.open li a {
 }
 
 .classify.section .classify-container .box-container .row {
-    margin-bottom: 20px;
+    margin: 0;
 }
 
 .classify.section .classify-container .box-container .row .content {
-    background-color: #ddd;
-    width: 250px;
-    height: 300px;
-    margin: 0 10px;
+    background: #fff;
+}
+
+.classify.section .classify-container .box-container .row .content div div {
+    margin-top: 85px;
+}
+
+.classify.section .classify-container .box-container .row .content div div .content-title-text {
+    transform: translateY(30px);
+    transition: var(--transition-short);
+}
+
+
+.classify.section .classify-container .box-container .row .content:hover div div .content-title-text {
+    transform: translateY(0px);
+}
+
+
+.classify.section .classify-container .box-container .row .content div div .content-description {
+    transition: var(--transition-long);
+    opacity: 0;
+
+}
+
+.classify.section .classify-container .box-container .row .content:hover div div .content-description {
+    opacity: 1;
+}
+
+.classify.section .classify-container .box-container .row .content {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+    width: 235px;
+    padding: 12px 0px 12px 20px;
+    height: 275px;
+    margin: 10px 10px;
     position: relative;
 }
 
@@ -497,12 +567,12 @@ header .navigation .right-menu .menu-toggler.open li a {
     border: 1px solid var(--text-color);
     background: transparent;
     transition: all 0.4s ease-out 0s;
-    box-shadow: inset 0 0 0 0 #ffffff;
+    box-shadow: inset 0 0 0 0 var(--main-color);
 }
 
 .classify.section .classify-container .box-container .row .content .modalBtns:hover {
-    background: #212121;
-    box-shadow: inset 400px 0 0 0 #212121;
+    background: var(--main-color);
+    box-shadow: inset 400px 0 0 0 var(--main-color);
     color: var(--text-color-light);
 }
 
@@ -533,10 +603,14 @@ header .navigation .right-menu .menu-toggler.open li a {
     position: relative;
     background-color: #fff;
     padding: 1.5rem;
-    border-radius: 15px;
+    border-radius: 5px;
     margin: 0 15%;
     width: 700px;
     height: 500px;
+}
+
+.classify.section .classify-container .box-container .row .modal-content .content .paragraph {
+    margin: 20px;
 }
 
 .classify.section .classify-container .box-container .row .content .uil-multiply {
@@ -554,4 +628,18 @@ header .navigation .right-menu .menu-toggler.open li a {
 
 .classify.section .classify-container .box-container .row .modal-content .content .content-title {
     font-size: x-large;
+}
+
+@media screen and (max-width: 375px){
+    .classify.section .classify-container .main-title .main-text {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .classify.section .classify-container .box-container .row .modal-content .content {
+        width: auto;
+        margin: 0 auto;
+        overflow: scroll;
+    }
 }
