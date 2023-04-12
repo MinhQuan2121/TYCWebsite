@@ -1,3 +1,5 @@
+// Toggler
+
 const toggler = document.querySelector('.toggler');
 const menu_toggler = document.querySelector('.menu-toggler');
 
@@ -5,6 +7,8 @@ toggler.onclick = function(){
     menu_toggler.classList.toggle('open');
     toggler.classList.toggle('active');
 }
+
+// Modal
 
 const modalViews = document.querySelectorAll('.modal-content'),
     modalBtns = document.querySelectorAll('.modalBtns'),
@@ -27,6 +31,8 @@ modalCloses.forEach((modalClose) => {
         })
     })
 })
+
+// CAROUSEL
 
 const carousel = document.querySelector(".carousel"),
     firstImg = carousel.querySelectorAll('img')[0];
@@ -67,4 +73,31 @@ carousel.addEventListener('mousedown', dragStart);
 carousel.addEventListener('mousemove', dragging);
 carousel.addEventListener('mouseup', dragStop);
 
+// 
 
+$(function() {
+    var Accordion = function(el, multiple) {
+      this.el = el || {};
+      this.multiple = multiple || false;
+  
+      // Variables privadas
+      var links = this.el.find('.link');
+      // Evento
+      links.on('click', {el: this.el, multiple: this.multiple}, this.dropdown)
+    }
+  
+    Accordion.prototype.dropdown = function(e) {
+      var $el = e.data.el;
+        $this = $(this),
+        $next = $this.next();
+  
+      $next.slideToggle();
+      $this.parent().toggleClass('open');
+  
+      if (!e.data.multiple) {
+        $el.find('.submenu').not($next).slideUp().parent().removeClass('open');
+      };
+    } 
+  
+    var accordion = new Accordion($('#accordion'), false);
+});

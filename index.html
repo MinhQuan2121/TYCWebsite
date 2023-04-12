@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>TYCRecycle - Offical Website</title>
 
     <!-- Links -->
     <link rel="stylesheet" href="/css/style.css">
@@ -26,12 +26,12 @@
 <style>
     /* width */
     ::-webkit-scrollbar {
-        width: 5px;
+        width: 2px; 
     }
     
     /* Track */
     ::-webkit-scrollbar-track {
-        background: #f1f1f1; 
+        background: transparent; 
     }
      
     /* Handle */
@@ -43,312 +43,528 @@
     ::-webkit-scrollbar-thumb:hover {
         background: #555; 
     }
-/* 
-    .swiper-pagination-bullet {
-      width: 20px;
-      height: 20px;
-      text-align: center;
-      line-height: 20px;
-      font-size: 12px;
-      color: #000;
-      opacity: 1;
-      background: rgba(0, 0, 0, 0.2);
-    }
 
-    .swiper-pagination-bullet-active {
-      color: #fff;
-      background: #007aff;
-    } */
+    /* #scroll-animate
+{
+  overflow: hidden;
+}
+
+#scroll-animate-main
+{
+  width: 100%;
+  left: 0;
+  position: fixed;
+}
+
+#heightPage,
+#heightScroll
+{
+  width: 10px;
+  top: 0;
+  position: absolute;
+  z-index: 99;
+}
+
+#heightPage
+{
+  left: 0;
+}
+
+#heightScroll
+{
+  right: 0;
+}
+
+header
+{
+  width: 100%;
+  height: 100%;
+  background: url(https://raw.githubusercontent.com/hudsonmarinho/header-and-footer-parallax-effect/master/assets/images/bg-header.jpg) no-repeat 50% 50%;
+  top: 0;
+  position: fixed;
+  z-index: -1;
+}
+
+footer
+{
+  width: 100%;
+  height: 300px;
+  background: gray;
+  bottom: -300px;
+  position: fixed;
+  z-index: -1;
+}
+
+.content
+{
+  height: 1000px;
+  min-height: 1000px;
+  background: #ededed;
+  position: relative;
+  z-index: 1;
+}
+
+.wrapper-parallax {
+  margin-top: 100%;
+  margin-bottom: 300px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+
+header,
+footer,
+#scroll-animate-main
+{
+  -webkit-transition-property: all;
+     -moz-transition-property: all;
+      transition-property: all;
+
+  -webkit-transition-duration: 0.4s;
+     -moz-transition-duration: 0.4s;
+      transition-duration: 0.4s;
+
+  -webkit-transition-timing-function: cubic-bezier(0, 0, 0, 1);
+     -moz-transition-timing-function: cubic-bezier(0, 0, 0, 1);
+      transition-timing-function: cubic-bezier(0, 0, 0, 1);
+} */
 </style>
 <body>
-    <div class="app">
-        <header class="header">
-            <nav class="navigation">
-                <div class="branding-logo">
-                    <h1><span>P</span>ortfolio</h1>
-                </div>
-                <div class="right-menu">
-                    <button type="button" class="toggler"></button>
-                    <ul class="menu-toggler">
-                        <li class="">
-                            <a href="#">
-                                Giới thiệu
-                            </a>
-                        </li>
-                        <li class="">
-                            <a href="#">
-                                Phân loại rác
-                            </a>
-                        </li>
-                        <li class="">
-                            <a href="#">
-                                Sản phẩm tái chế
-                            </a>
-                        </li>
-                        <li class="">
-                            <a href="#">
-                                Mô hình tái chế
-                            </a>
-                        </li>
-                        <li class="">
-                            <a href="#">
-                                Sự kiện liên quan
-                            </a>
-                        </li>
-                        <li class="">
-                            <a href="#">
-                                Câu chuyện thành công
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
-        <main>
-            <section class="home section" id="home">
-                <img src="/image/home-background.jpg" alt="" class="home-background">
-                <div class="home-container container">
-                    <div class="home-content">
-                        <h1 class="home-title">TÁI CHẾ  <span>RÁC THẢI</span><br> /<span class="span"> NHỰA</span></h1>
-                        <h4 class="home-description">Vấn đề rác thải ngày càng trở nên nghiêm trọng với sự gia tăng dân số và sự tiêu thụ hàng hóa. Rác thải không chỉ ảnh hưởng đến môi trường mà còn gây ra những vấn đề sức khỏe công cộng</h3>
-                        <span class="home-button">
-                            XEM THÊM</span>
-                        </span>
-                    </div>
-                    <div class="home-image">
-                        <img src="/image/home-image.jpg" alt="">
-                    </div>
-                </div>
-            </section>
-            <section class="about section" id="about">
-                <div class="about-container">
-                    <div class="about-img">
-                        <img src="/image/about-image.jpg" alt="">
-                    </div>
-                    <div class="about-content">
-                        <h1 class="about-title">TÁI CHẾ LÀ GÌ</h1>
-                        <h3 class="about-description">
-                            Tái chế là quá trình sử dụng lại các vật liệu và sản phẩm đã qua sử dụng để tạo ra những sản phẩm mới mà không cần phải sản xuất nguyên liệu mới. Thay vì đổ bỏ các vật liệu này vào môi trường, tái chế giúp giảm thiểu lượng rác thải và tiết kiệm nguồn tài nguyên thiên nhiên.
-                            <br>
-                            <br>
-                            Tái chế có nhiều lợi ích cho môi trường và con người, và là một cách hiệu quả để giảm thiểu tác động của hoạt động sản xuất và tiêu dùng đến môi trường. Chúng ta nên học cách tái chế và chủ động áp dụng để bảo vệ môi trường và tài nguyên thiên nhiên.
-                        </h3>
-                    </div>
-                </div>
-            </section>
-            <section class="classify section" id="classify">
-                <div class="classify-container">
-                    <div class="main-title">
-                        <h1 class="main-text">CÁC LOẠI RÁC CÓ THỂ TÁI CHẾ</h1>
-                    </div>
-                    <div class="box-container">
-                        <div class="row">
-                            <!-- GRID 1 -->
-                            <div class="content">
-                                <div>
-                                    <h1 class="content-title-number">1</h1>
-                                    <div>
-                                        <h3 class="content-title-text">Giấy và bìa</h3>
-                                        <p class="content-description"> Giấy, tờ báo, sách cũ, hộp...</p>
-                                    </div>
-                                </div>
-                                <span class="button modalBtns"> 
-                                    XEM THÊM
-                                </span>
-
-                                <div class="modal-content">
-                                    <i class="uil uil-multiply modalCloses"></i>
-                                    
-                                    <div class="content">
-                                        <h4 class="modal-title">1. Giấy và bìa</h4>
-                                        <span><p class="modal-description paragraphOne paragraph">Giấy và bìa có thể tái chế để bảo vệ môi trường. Chúng có thể được sản xuất từ giấy phế liệu hoặc các nguồn tài nguyên bền vững như tre, lúa mì, thay vì sử dụng nguồn gốc từ gỗ đang cạn kiệt.</p></span>
-                                        <h4 class="content-title titleTwo">Hướng dẫn tái chế</h6>
-                                        <p class="paragraph paragraphTwo">Để tái chế rác và bìa, bạn có thể làm theo các bước sau: <br>
-
-                                            Phân loại rác: Phân loại rác ra thành các loại khác nhau để đảm bảo tính hiệu quả trong quá trình tái chế. <br>
-                                            
-                                            Tách giấy và bìa: Tách giấy và bìa ra khỏi các vật liệu khác như nhựa và kim loại. <br>
-                                            
-                                            Cắt giấy và bìa thành mảnh nhỏ: Cắt giấy và bìa thành những mảnh nhỏ giúp cho việc tái chế trở nên dễ dàng hơn.<br> 
-                                            
-                                            Đưa giấy và bìa vào thùng tái chế: Đặt giấy và bìa vào thùng tái chế hoặc mang đến các điểm thu gom rác tái chế của thành phố.<br>
-                                            
-                                            Mua sản phẩm được tái chế: Tìm kiếm các sản phẩm được tái chế từ giấy và bìa như sổ tay, túi giấy, hộp giấy, giấy in ấn, ...<br>
-                                            
-                                            Những bước này giúp cho việc tái chế rác và bìa trở nên hiệu quả hơn và góp phần bảo vệ môi trường.</p>
-                                        <a href="#" class="link"></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- GRID 2 -->
-                            <div class="content">
-                                <!-- <img src="/image/origin/metal.jpg" alt=""> -->
-                                <div>
-                                    <h1 class="content-title-number">2</h1>
-                                    <div>
-                                        <h3 class="content-title-text">Kim loại</h3>
-                                        <p class="content-description">Nhôm, thiếc, đồng, sắt...</p>
-                                    </div>
-                                </div>
-                                <span class="button modalBtns"> XEM THÊM
-
-                                </span>
-
-                                <div class="modal-content">
-                                    <i class="uil uil-multiply modalCloses"></i>
-                                    
-                                    <div class="content">
-                                        <h4 class="modal-title">2. Kim loại</h4>
-                                        <span><p class="modal-description paragraphOne paragraph">Kim loại là một trong những vật liệu có thể tái chế được khá hiệu quả.</p></span>
-                                        <h4 class="content-title titleTwo">Hướng dẫn tái chế</h6>
-                                        <p class="paragraph paragraphTwo">
-
-                                            Phân loại kim loại: Phân loại kim loại ra thành các loại khác nhau để đảm bảo tính hiệu quả trong quá trình tái chế. <br>
-                                            
-                                            Tách kim loại ra khỏi các vật liệu khác: Loại bỏ các phần không thuộc về kim loại như nhựa hoặc gỗ. <br>
-                                            
-                                            Nghiền kim loại thành mảnh nhỏ: Nghiền kim loại thành những mảnh nhỏ để giúp cho việc tái chế trở nên dễ dàng hơn. <br>
-                                            
-                                            Đưa kim loại vào thùng tái chế: Đặt kim loại vào thùng tái chế hoặc mang đến các điểm thu gom rác tái chế của thành phố. <br>
-                                            
-                                            Sử dụng sản phẩm được tái chế từ kim loại: Tìm kiếm các sản phẩm được tái chế từ kim loại như thép, nhôm, đồ gia dụng hoặc đồ trang sức. <br>
-                                            
-                                            Tái chế kim loại giúp giảm thiểu khối lượng rác thải và sử dụng tài nguyên một cách bền vững hơn.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- GRID 3 -->
-                            <div class="content">
-                                <!-- <img src="/image/origin/plastic 2.jpg" alt=""> -->
-                                <div>
-                                    <h1 class="content-title-number">3</h1>
-                                    <div>
-                                        <h3 class="content-title-text">Nhựa</h3>
-                                        <p class="content-description">Nhôm, thiếc, đồng, sắt...</p>
-                                    </div>
-                                </div>
-                                <span class="button modalBtns"> XEM THÊM
-
-                                </span>
-
-                                <div class="modal-content">
-                                    <i class="uil uil-multiply modalCloses"></i>
-                                    
-                                    <div class="content">
-                                        <h4 class="modal-title">3. Nhựa</h4>
-                                        <span><p class="modal-description paragraphOne paragraph">Nhựa là một trong những vật liệu khó tái chế và gây hại cho môi trường nếu không được xử lý đúng cách. Tuy nhiên, vẫn có những cách để tái chế nhựa. Dưới đây là hướng dẫn tái chế nhựa <br></p></span>
-                                        <h4 class="content-title titleTwo">Hướng dẫn tái chế</h6>
-                                        <p class="paragraph">Phân loại nhựa: Nhựa có thể được phân loại thành các loại khác nhau, vì vậy bạn cần phân loại chúng thành từng loại riêng biệt để tái chế.
-                                            Đổi lại những sản phẩm có thể tái sử dụng: Nếu bạn sử dụng những sản phẩm có thể tái sử dụng như chai nước uống, túi giặt rửa hay bình đựng thực phẩm, hãy đổi lại các sản phẩm này tại các điểm thu gom rác tái chế của thành phố.
-                                            Tái chế các sản phẩm nhựa: Hãy tìm cách tái chế các sản phẩm nhựa như chai nhựa, túi nhựa, hộp nhựa, đồ chơi và sản phẩm gia dụng. Bạn có thể mang chúng đến các điểm thu gom rác hoặc tự tái chế tại nhà.
-                                            Sử dụng sản phẩm tái chế từ nhựa: Tìm kiếm các sản phẩm được tái chế từ nhựa để sử dụng như bàn chải đánh răng, nẹp nhựa hay các sản phẩm khác.
-                                            Tái chế nhựa giúp giảm thiểu khối lượng rác thải và tài nguyên sử dụng.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <!-- GRID 4 -->
-                            <div class="content">
-                                <!-- <img src="/image/origin/glass.jpg" alt=""> -->
-                                <div>
-                                    <h1 class="content-title-number">4</h1>
-                                    <div>
-                                        <h3 class="content-title-text">Thủy tinh</h3>
-                                        <p class="content-description">Chai thủy tinh, ly thủy tinh...</p>
-                                    </div>
-                                </div>
-                                <span class="button modalBtns"> XEM THÊM
-
-                                </span>
-
-                                <div class="modal-content">
-                                    <i class="uil uil-multiply modalCloses"></i>
-                                    
-                                    <div class="content">
-                                        <h4 class="modal-title">4. Thủy tinh</h4>
-                                        <span><p class="modal-description paragraphOne paragraph">Thủy tinh là một trong những vật liệu dễ tái chế và có thể được sử dụng lại để tạo ra các sản phẩm mới.</p></span>
-                                        <h4 class="content-title titleTwo">Hướng dẫn tái chế</h6>
-                                        <p class="paragraph paragraphTwo">Phân loại nhựa: Nhựa có thể được phân loại thành các loại khác nhau, vì vậy bạn cần phân loại chúng thành từng loại riêng biệt để tái chế. Đổi lại những sản phẩm có thể tái sử dụng: <br>
-                                            Nếu bạn sử dụng những sản phẩm có thể tái sử dụng như chai nước uống, túi giặt rửa hay bình đựng thực phẩm, hãy đổi lại các sản phẩm này tại các điểm thu gom rác tái chế của thành phố. Tái chế các sản phẩm nhựa: Hãy tìm cách tái chế các sản phẩm nhựa như chai nhựa, túi nhựa, hộp nhựa, đồ chơi và sản phẩm gia dụng. Bạn có thể mang chúng đến các điểm thu gom rác hoặc tự tái chế tại nhà. Sử dụng sản phẩm tái chế từ nhựa: Tìm kiếm các sản phẩm được tái chế từ nhựa để sử dụng như bàn chải đánh răng, nẹp nhựa hay các sản phẩm khác. Tái chế nhựa giúp giảm thiểu khối lượng rác thải và tài nguyên sử dụng.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- GRID 5 -->
-                            <div class="content">
-                                <!-- <img src="/image/origin/wood.jpg" alt=""> -->
-                                <div>
-                                    <h1 class="content-title-number">5</h1>
-                                    <div>
-                                        <h3 class="content-title-text">Gỗ</h3>
-                                        <p class="content-description">Bìa, ván ép, tấm ván dăm</p>
-                                    </div>
-                                </div>
-                                <span class="button modalBtns"> XEM THÊM
-
-                                </span>
-
-                                <div class="modal-content">
-                                    <i class="uil uil-multiply modalCloses"></i>
-                                    
-                                    <div class="content">
-                                        <h4 class="modal-title">5. Gỗ</h4>
-                                        <span><p class="modal-description paragraphOne paragraph">Gỗ là một trong những vật liệu có thể tái chế và có nhiều cách để tái sử dụng</p></span>
-                                        <h4 class="content-title titleTwo">Hướng dẫn tái chế</h6>
-                                        <p class="paragraph paragraphTwo">Sử dụng lại gỗ: Sử dụng lại các thanh gỗ đã qua sử dụng để tạo ra các sản phẩm mới như kệ sách, bàn làm việc, ghế hoặc giá sách.
-
-                                            Tái chế gỗ phế liệu: Gỗ phế liệu có thể được tái sử dụng để tạo ra các sản phẩm khác như pallet, tấm lót nền hay ván ép.
-                                            
-                                            Sử dụng gỗ tái chế: Tìm kiếm các sản phẩm được tạo ra từ gỗ tái chế như đồ trang trí, vật dụng gia đình hay đồ nội thất.
-                                            
-                                            Đưa gỗ vào thùng tái chế: Đặt gỗ vào thùng tái chế hoặc mang đến các điểm thu gom rác tái chế của thành phố.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- GRID 6 -->
-                            <div class="content">
-                                <!-- <img src="/image/origin/pin.jpg" alt=""> -->
-                                <div>
-                                    <h1 class="content-title-number">6</h1>
-                                    <div>
-                                        <h3 class="content-title-text">Đồ điện tử</h3>
-                                        <p class="content-description"> Điện thoại di động, tivi...</p>
-                                    </div>
-                                </div>
-                                <span class="button modalBtns"> XEM THÊM
-
-                                </span>
-
-                                <div class="modal-content">
-                                    <i class="uil uil-multiply modalCloses"></i>
-                                    
-                                    <div class="content">
-                                        <h4 class="modal-title">6. Đồ điện tử</h4>
-                                        <span><p class="modal-description paragraphOne paragraph">Đồ điện tử là một trong những vật liệu rác thải khó tái chế và có hại cho môi trường nếu không được xử lý đúng cách.</p></span>
-                                        <h4 class="content-title titleTwo">Hướng dẫn tái chế</h6>
-                                        <p class="paragraph paragraphTwo">Tìm kiếm các điểm thu gom rác điện tử: Các thành phố thường có các điểm thu gom rác điện tử để thu gom các thiết bị như máy tính, điện thoại di động, máy ảnh, máy quay phim, máy tính bảng và các loại thiết bị điện tử khác.
-
-                                            Donate hoặc bán lại thiết bị còn mới: Nếu thiết bị của bạn còn tốt và có thể sử dụng được, hãy donate hoặc bán lại để người khác tiếp tục sử dụng.
-                                            
-                                            Tái chế linh kiện: Một số linh kiện điện tử như pin, card đồ họa, chip và RAM có thể được tái chế và sử dụng lại.
-                                            
-                                            Xử lý đúng cách: Đối với các thiết bị điện tử đã hỏng, hãy đưa chúng đến các điểm thu gom rác điện tử để xử lý đúng cách.
-                                            
-                                            Tái chế đồ điện tử giúp giảm thiểu khối lượng rác thải và sử dụng tài nguyên một cách bền vững hơn.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </main>
-        <footer>
-
-        </footer>
+    <div class="center">
+        <div class="ring"></div>
+        <span>loading...</span>
     </div>
+    <div class="scroll-animate">
+        <div class="scroll-animate-main">
+            <div class="wrapper-parallax">
+                <header class="header">
+                    <nav class="navigation">
+                        <div class="branding-logo">
+                            <h1><span>P</span>ortfolio</h1>
+                        </div>
+                        <div class="right-menu">
+                            <button type="button" class="toggler"></button>
+                            <ul class="menu-toggler">
+                                <li class="list active">
+                                    <a href="#home">
+                                        Giới thiệu
+                                    </a>
+                                </li>
+                                <li class="list">
+                                    <a href="#classify">
+                                        Phân loại
+                                    </a>
+                                </li>
+                                <li class="list">
+                                    <a href="#">
+                                        Sản phẩm
+                                    </a>
+                                </li>
+                                <li class="list">
+                                    <a href="#">
+                                        Hỏi đáp
+                                    </a>
+                                </li>
+                                <li class="list">
+                                    <a href="#">
+                                        Sự kiện
+                                    </a>
+                                </li>
+                                <li class="list">
+                                    <a href="#">
+                                        Câu chuyện thành công
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </header>
+                <main>
+                    <section class="home section content" id="home">
+                        <img src="/image/home-background.jpg" alt="" class="home-background" style="object-fit: cover;">
+                        <div class="home-container container">
+                            <div class="home-content">
+                                <h1 class="home-title">TÁI CHẾ  <span>RÁC THẢI</span> /<span class="span"> NHỰA</span></h1>
+                                <h4 class="home-description">Vấn đề rác thải ngày càng trở nên nghiêm trọng với sự gia tăng dân số và sự tiêu thụ hàng hóa. Rác thải không chỉ ảnh hưởng đến môi trường mà còn gây ra những vấn đề sức khỏe công cộng</h3>
+                                <a href="#about" class="home-button">
+                                    XEM THÊM</span>
+                                </a>
+                            </div>
+                            <div class="home-image">
+                                <img src="/image/home-image.jpg" alt="">
+                            </div>
+                        </div>
+                    </section>
+                    <section class="about section content" id="about">
+                        <div class="about-container">
+                                <img src="/image/about-image.jpg" alt="">
+                            <div class="about-content">
+                                <h1 class="about-title">TÁI CHẾ LÀ GÌ</h1>
+                                <P>Tái chế là quá trình chuyển đổi các vật liệu sử dụng thành các sản phẩm mới có giá trị, thay vì đưa chúng vào bãi rác. Tái chế giúp giảm thiểu lượng chất thải, tiết kiệm tài nguyên và năng lượng cần thiết để sản xuất các sản phẩm mới. Các vật liệu tái chế có thể bao gồm giấy, nhôm, thép, nhựa và thủy tinh. Tuy nhiên, các vật liệu tái chế có thể khác nhau tùy thuộc vào địa điểm và quy định của từng khu vực.</P>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="classify section content" id="classify">
+                        <div class="classify-container">
+                            <div class="main-title">
+                                <h1 class="main-text">CÁC LOẠI RÁC CÓ THỂ TÁI CHẾ</h1>
+                            </div>
+                            <div class="box-container">
+                                <div class="row">
+                                    <!-- GRID 1 -->
+                                    <div class="content" style="background-image: url(/image/origin/paper.jpg);">
+                                        <div>
+                                            <h1 class="content-title-number">1</h1>
+                                            <div>
+                                                <h3 class="content-title-text">Giấy và bìa</h3>
+                                                <p class="content-description"> Giấy, tờ báo, sách cũ, hộp...</p>
+                                            </div>
+                                        </div>
+                                        <span class="button modalBtns"> 
+                                            XEM THÊM
+                                        </span>
+        
+                                        <div class="modal-content">
+                                            <i class="uil uil-multiply modalCloses"></i>
+                                            
+                                            <div class="content">
+                                                <h4 class="modal-title">1. Giấy và bìa</h4>
+                                                <span><p class="modal-description paragraphOne paragraph">Giấy và bìa có thể tái chế để bảo vệ môi trường. Chúng có thể được sản xuất từ giấy phế liệu hoặc các nguồn tài nguyên bền vững như tre, lúa mì, thay vì sử dụng nguồn gốc từ gỗ đang cạn kiệt.</p></span>
+                                                <h4 class="content-title titleTwo">Hướng dẫn tái chế</h6>
+                                                <p class="paragraph paragraphTwo">Để tái chế rác và bìa, bạn có thể làm theo các bước sau: <br>
+        
+                                                    Phân loại rác: Phân loại rác ra thành các loại khác nhau để đảm bảo tính hiệu quả trong quá trình tái chế. <br>
+                                                    
+                                                    Tách giấy và bìa: Tách giấy và bìa ra khỏi các vật liệu khác như nhựa và kim loại. <br>
+                                                    
+                                                    Cắt giấy và bìa thành mảnh nhỏ: Cắt giấy và bìa thành những mảnh nhỏ giúp cho việc tái chế trở nên dễ dàng hơn.<br> 
+                                                    
+                                                    Đưa giấy và bìa vào thùng tái chế: Đặt giấy và bìa vào thùng tái chế hoặc mang đến các điểm thu gom rác tái chế của thành phố.<br>
+                                                    
+                                                    Mua sản phẩm được tái chế: Tìm kiếm các sản phẩm được tái chế từ giấy và bìa như sổ tay, túi giấy, hộp giấy, giấy in ấn, ...<br>
+                                                    
+                                                    Những bước này giúp cho việc tái chế rác và bìa trở nên hiệu quả hơn và góp phần bảo vệ môi trường.</p>
+                                                <a href="#" class="link"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- GRID 2 -->
+                                    <div class="content" style="background-image: url(/image/origin/metal.jpg);">
+                                        <!-- <img src="/image/origin/metal.jpg" alt=""> -->
+                                        <div>
+                                            <h1 class="content-title-number">2</h1>
+                                            <div>
+                                                <h3 class="content-title-text">Kim loại</h3>
+                                                <p class="content-description">Nhôm, thiếc, đồng, sắt...</p>
+                                            </div>
+                                        </div>
+                                        <span class="button modalBtns"> XEM THÊM
+        
+                                        </span>
+        
+                                        <div class="modal-content">
+                                            <i class="uil uil-multiply modalCloses"></i>
+                                            
+                                            <div class="content">
+                                                <h4 class="modal-title">2. Kim loại</h4>
+                                                <span><p class="modal-description paragraphOne paragraph">Kim loại là một trong những vật liệu có thể tái chế được khá hiệu quả.</p></span>
+                                                <h4 class="content-title titleTwo">Hướng dẫn tái chế</h6>
+                                                <p class="paragraph paragraphTwo">
+        
+                                                    Phân loại kim loại: Phân loại kim loại ra thành các loại khác nhau để đảm bảo tính hiệu quả trong quá trình tái chế. <br>
+                                                    
+                                                    Tách kim loại ra khỏi các vật liệu khác: Loại bỏ các phần không thuộc về kim loại như nhựa hoặc gỗ. <br>
+                                                    
+                                                    Nghiền kim loại thành mảnh nhỏ: Nghiền kim loại thành những mảnh nhỏ để giúp cho việc tái chế trở nên dễ dàng hơn. <br>
+                                                    
+                                                    Đưa kim loại vào thùng tái chế: Đặt kim loại vào thùng tái chế hoặc mang đến các điểm thu gom rác tái chế của thành phố. <br>
+                                                    
+                                                    Sử dụng sản phẩm được tái chế từ kim loại: Tìm kiếm các sản phẩm được tái chế từ kim loại như thép, nhôm, đồ gia dụng hoặc đồ trang sức. <br>
+                                                    
+                                                    Tái chế kim loại giúp giảm thiểu khối lượng rác thải và sử dụng tài nguyên một cách bền vững hơn.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- GRID 3 -->
+                                    <div class="content" style="background-image: url(/image/origin/plastic\ 2.jpg);">
+                                        <!-- <img src="/image/origin/plastic 2.jpg" alt=""> -->
+                                        <div>
+                                            <h1 class="content-title-number">3</h1>
+                                            <div>
+                                                <h3 class="content-title-text">Nhựa</h3>
+                                                <p class="content-description">Nhôm, thiếc, đồng, sắt...</p>
+                                            </div>
+                                        </div>
+                                        <span class="button modalBtns"> XEM THÊM
+        
+                                        </span>
+        
+                                        <div class="modal-content">
+                                            <i class="uil uil-multiply modalCloses"></i>
+                                            
+                                            <div class="content">
+                                                <h4 class="modal-title">3. Nhựa</h4>
+                                                <span><p class="modal-description paragraphOne paragraph">Nhựa là một trong những vật liệu khó tái chế và gây hại cho môi trường nếu không được xử lý đúng cách. Tuy nhiên, vẫn có những cách để tái chế nhựa. Dưới đây là hướng dẫn tái chế nhựa <br></p></span>
+                                                <h4 class="content-title titleTwo">Hướng dẫn tái chế</h6>
+                                                <p class="paragraph">Phân loại nhựa: Nhựa có thể được phân loại thành các loại khác nhau, vì vậy bạn cần phân loại chúng thành từng loại riêng biệt để tái chế.
+                                                    Đổi lại những sản phẩm có thể tái sử dụng: Nếu bạn sử dụng những sản phẩm có thể tái sử dụng như chai nước uống, túi giặt rửa hay bình đựng thực phẩm, hãy đổi lại các sản phẩm này tại các điểm thu gom rác tái chế của thành phố.
+                                                    Tái chế các sản phẩm nhựa: Hãy tìm cách tái chế các sản phẩm nhựa như chai nhựa, túi nhựa, hộp nhựa, đồ chơi và sản phẩm gia dụng. Bạn có thể mang chúng đến các điểm thu gom rác hoặc tự tái chế tại nhà.
+                                                    Sử dụng sản phẩm tái chế từ nhựa: Tìm kiếm các sản phẩm được tái chế từ nhựa để sử dụng như bàn chải đánh răng, nẹp nhựa hay các sản phẩm khác.
+                                                    Tái chế nhựa giúp giảm thiểu khối lượng rác thải và tài nguyên sử dụng.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <!-- GRID 4 -->
+                                    <div class="content" style="background-image: url(/image/origin/glass.jpg);">
+                                        <!-- <img src="/image/origin/glass.jpg" alt=""> -->
+                                        <div>
+                                            <h1 class="content-title-number">4</h1>
+                                            <div>
+                                                <h3 class="content-title-text">Thủy tinh</h3>
+                                                <p class="content-description">Chai thủy tinh, ly thủy tinh...</p>
+                                            </div>
+                                        </div>
+                                        <span class="button modalBtns"> XEM THÊM
+        
+                                        </span>
+        
+                                        <div class="modal-content">
+                                            <i class="uil uil-multiply modalCloses"></i>
+                                            
+                                            <div class="content">
+                                                <h4 class="modal-title">4. Thủy tinh</h4>
+                                                <span><p class="modal-description paragraphOne paragraph">Thủy tinh là một trong những vật liệu dễ tái chế và có thể được sử dụng lại để tạo ra các sản phẩm mới.</p></span>
+                                                <h4 class="content-title titleTwo">Hướng dẫn tái chế</h6>
+                                                <p class="paragraph paragraphTwo">Thủy tinh là một trong những vật liệu dễ tái chế và có thể được sử dụng lại để tạo ra các sản phẩm mới. Dưới đây là hướng dẫn tái chế thủy tinh: <br>
+        
+                                                    Phân loại thủy tinh: Phân loại thủy tinh ra thành từng loại khác nhau để đảm bảo tính hiệu quả trong quá trình tái chế. <br>
+                                                    
+                                                    Tách thủy tinh ra khỏi các vật liệu khác: Loại bỏ các phần không thuộc về thủy tinh để đưa vào quá trình tái chế. <br>
+                                                    
+                                                    Đưa thủy tinh vào thùng tái chế: Đặt thủy tinh vào thùng tái chế hoặc mang đến các điểm thu gom rác tái chế của thành phố. <br>
+                                                    
+                                                    Sử dụng sản phẩm được tái chế từ thủy tinh: Tìm kiếm các sản phẩm được tái chế từ thủy tinh như chai lọ, cốc, đồ decor hoặc các sản phẩm khác. <br>
+                                                    
+                                                    Tái sử dụng thủy tinh: Nếu bạn có thủy tinh cũ, bạn có thể tái sử dụng nó bằng cách tạo thành các sản phẩm khác như bình hoa, đĩa, chén hay ly uống. <br>
+                                                    
+                                                    Tái chế thủy tinh giúp giảm thiểu khối lượng rác thải và sử dụng tài nguyên một cách bền vững hơn. <br></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- GRID 5 -->
+                                    <div class="content" style="background-image: url(/image/origin/wood.jpg);">
+                                        <!-- <img src="/image/origin/wood.jpg" alt=""> -->
+                                        <div>
+                                            <h1 class="content-title-number">5</h1>
+                                            <div>
+                                                <h3 class="content-title-text">Gỗ</h3>
+                                                <p class="content-description">Bìa, ván ép, tấm ván dăm</p>
+                                            </div>
+                                        </div>
+                                        <span class="button modalBtns"> XEM THÊM
+        
+                                        </span>
+        
+                                        <div class="modal-content">
+                                            <i class="uil uil-multiply modalCloses"></i>
+                                            
+                                            <div class="content">
+                                                <h4 class="modal-title">5. Gỗ</h4>
+                                                <span><p class="modal-description paragraphOne paragraph">Gỗ là một trong những vật liệu có thể tái chế và có nhiều cách để tái sử dụng</p></span>
+                                                <h4 class="content-title titleTwo">Hướng dẫn tái chế</h6>
+                                                <p class="paragraph paragraphTwo">Sử dụng lại gỗ: Sử dụng lại các thanh gỗ đã qua sử dụng để tạo ra các sản phẩm mới như kệ sách, bàn làm việc, ghế hoặc giá sách.
+        
+                                                    Tái chế gỗ phế liệu: Gỗ phế liệu có thể được tái sử dụng để tạo ra các sản phẩm khác như pallet, tấm lót nền hay ván ép.
+                                                    
+                                                    Sử dụng gỗ tái chế: Tìm kiếm các sản phẩm được tạo ra từ gỗ tái chế như đồ trang trí, vật dụng gia đình hay đồ nội thất.
+                                                    
+                                                    Đưa gỗ vào thùng tái chế: Đặt gỗ vào thùng tái chế hoặc mang đến các điểm thu gom rác tái chế của thành phố.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- GRID 6 -->
+                                    <div class="content" style="background-image: url(/image/origin/pin.jpg);">
+                                        <!-- <img src="/image/origin/pin.jpg" alt=""> -->
+                                        <div>
+                                            <h1 class="content-title-number">6</h1>
+                                            <div>
+                                                <h3 class="content-title-text">Đồ điện tử</h3>
+                                                <p class="content-description"> Điện thoại di động, tivi...</p>
+                                            </div>
+                                        </div>
+                                        <span class="button modalBtns"> XEM THÊM
+        
+                                        </span>
+        
+                                        <div class="modal-content">
+                                            <i class="uil uil-multiply modalCloses"></i>
+                                            
+                                            <div class="content">
+                                                <h4 class="modal-title">6. Đồ điện tử</h4>
+                                                <span><p class="modal-description paragraphOne paragraph">Đồ điện tử là một trong những vật liệu rác thải khó tái chế và có hại cho môi trường nếu không được xử lý đúng cách.</p></span>
+                                                <h4 class="content-title titleTwo">Hướng dẫn tái chế</h6>
+                                                <p class="paragraph paragraphTwo">Tìm kiếm các điểm thu gom rác điện tử: Các thành phố thường có các điểm thu gom rác điện tử để thu gom các thiết bị như máy tính, điện thoại di động, máy ảnh, máy quay phim, máy tính bảng và các loại thiết bị điện tử khác.
+        
+                                                    Donate hoặc bán lại thiết bị còn mới: Nếu thiết bị của bạn còn tốt và có thể sử dụng được, hãy donate hoặc bán lại để người khác tiếp tục sử dụng.
+                                                    
+                                                    Tái chế linh kiện: Một số linh kiện điện tử như pin, card đồ họa, chip và RAM có thể được tái chế và sử dụng lại.
+                                                    
+                                                    Xử lý đúng cách: Đối với các thiết bị điện tử đã hỏng, hãy đưa chúng đến các điểm thu gom rác điện tử để xử lý đúng cách.
+                                                    
+                                                    Tái chế đồ điện tử giúp giảm thiểu khối lượng rác thải và sử dụng tài nguyên một cách bền vững hơn.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="model section content" id="model">
+                        <div class="model-container">
+                            <div class="model-content">
+                                <h1 class="model-title">Mô hình tái chế</h1>
+                                <P class="model-subtitle">Mô hình tái chế giúp xử lý các vật liệu không còn được sử dụng để tạo ra sản phẩm mới và giảm thiểu lượng rác thải. Quá trình bao gồm thu gom các vật liệu, phân loại, xử lý và kiểm tra chất lượng sản phẩm. Mô hình này giúp giảm thiểu ô nhiễm, tiết kiệm tài nguyên và tạo nhiều cơ hội việc làm. Hơn nữa, cân nhắc các yếu tố kỹ thuật và kinh tế để đưa ra giải pháp tái chế hiệu quả là rất quan trọng. Nó giúp tăng cường nền kinh tế địa phương và đảm bảo tính ổn định và an toàn của sản phẩm tái chế.</P>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="product section content" id="product">
+                        <div class="content">
+                                <h1>SẢN PHẨM TÁI CHẾ</h1>
+                            </div>
+                            <div class="wrapper">
+                                <div class="pagination">
+                                    <i class="fa-solid fa-arrow-left" id="left"></i>
+                                    <i class="fa-solid fa-arrow-right" id="right"></i>
+                                </div>
+                                <div class="carousel">
+                                    <a href="https://www.youtube.com/watch?v=YZ8PnpMs3J4" target="_blank"><img src="https://i.ytimg.com/vi/YZ8PnpMs3J4/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBee_CjayJAYBXRiW1OMYO8_8-hbQ" alt=""></a>
+                                    <a href="https://www.youtube.com/watch?v=kVRUxvOIRnM" target="_blank"><img src="https://i.ytimg.com/vi/kVRUxvOIRnM/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCZXZp5am8Neg7saOYHCX3cLr0BoQ" alt=""></a>
+                                    <a href="https://www.youtube.com/watch?v=eQyBNL_II_8" target="_blank"><img src="https://i.ytimg.com/vi/eQyBNL_II_8/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC0hyE6xUCF7jbhsfdDJ-u3N_4zxg" alt=""></a>
+                                    <a href="https://www.youtube.com/watch?v=3poA02RzAr4" target="_blank"><img src="https://i.ytimg.com/vi/3poA02RzAr4/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLD3UYjtExLiwMTBBvyfaqda1mdYyg" alt=""></a>
+                                    <a href="https://www.youtube.com/watch?v=uhCisSWJtQk" target="_blank"><img src="https://i.ytimg.com/vi/KIQX6L0hyXw/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCM_Lxjh8rBAZJu9cFPutS7vVH_dg" alt=""></a>
+                                    <a href="https://www.youtube.com/watch?v=uhCisSWJtQk" target="_blank"><img src="https://i.ytimg.com/vi/uhCisSWJtQk/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDsYNyXZ2vwU9HTU27_DOUW-hxYTA" alt=""></a>
+                                    <a href="https://www.youtube.com/watch?v=j-6GLn4RaFQ&t=6s" target="_blank"><img src="https://i.ytimg.com/vi/j-6GLn4RaFQ/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAXCtD7M5ttx1BGL2Hlweb4tKspqw" alt=""></a>
+                                </div> 
+                            </div>
+                    </section>
+                    <section class="faq section content" id="faq">
+                        <span><h1>CÂU HỎI</h1></span>
+                        <div class="faq-container">
+                            <ul id="accordion" class="accordion">
+                                <li>
+                                <div class="link"></i>Vì sao phải phân loại rác tại nguồn?<i class="fa fa-chevron-down"></i></div>
+                                <ul class="submenu">
+                                    <li><p>Phân loại rác tại nguồn góp phần giảm thiểu tổng lượng rác thải trong cộng đồng thải ra môi trường nhằm giảm tải cho môi trường, tiết kiệm chi phí thu gom, vận chuyển, xử lý.</p></li>
+                                </ul>
+                                </li>
+                                <li class="default open">
+                                <div class="link">Chất thải rắn sinh hoạt tại TPHCM được phân loại thành mấy nhóm?<i class="fa fa-chevron-down"></i></div>
+                                <ul class="submenu">
+                                    <li><p>Hướng dẫn phân loại rác tại nguồn Theo Quyết định 09/2021/QĐ-UBND của UBND TP.HCM và hướng dẫn phân loại rác tại nguồn theo công văn số 4507/STNMT-CTR của Sở Tài Nguyên và Môi trường Thành Phố Hồ Chí Minh ngày 11 tháng 6 năm 2021. Theo đó cá nhân, hộ gia đình, các chủ nguồn thải phải phân loại rác thành:
+        
+                                        a/ Chất thải rắn có khả năng tái sử dụng, tái chế;
+                                        
+                                        b/ Chất thải còn lại (bao gồm chất thải thực phẩm)
+                                        
+                                        Chất thải nguy hại, chất thải cồng kềnh (tần suất phát sinh ít) thì có quy định riêng về thu gom, vận chuyển của địa phương.</p></li>
+                                </ul>
+                                </li>
+                                <li>
+                                <div class="link">Trang thiết bị để lưu giữ rác có yêu cầu gì không?<i class="fa fa-chevron-down"></i></div>
+                                <ul class="submenu">
+                                    <li><p>Tùy thuộc vào điều kiện và nhu cầu, cá nhân, hộ gia đình, chủ nguồn thải chất thải rắn sinh hoạt tự trang bị bao bì (túi) hoặc thiết bị lưu chứa (thùng) để lưu giữ riêng biệt từng nhóm chất thải sau phân loại.
+        
+                                        Phải đáp ứng các yêu cầu sau:
+                                        
+                                        - Bảo đảm lưu giữ an toàn, vệ sinh chất thải, không làm rơi vãi hoặc rò rỉ nước rác.
+                                        
+                                        - Thiết bị lưu chứa (thùng) có nắp đậy, bao bì (túi) phải được buộc kín.
+                                        
+                                        Khuyến khích:
+                                        
+                                        sử dụng thiết bị lưu chứa (thùng) chuyên dùng để lưu chứa Nhóm còn lại nhằm đảm bảo chất lượng vệ sinh môi trường và mỹ quan.
+                                        sử dụng đồng bộ thiết bị lưu chứa (thùng) có màu xanh lá cây để chứa Nhóm có khả năng tái sử dụng, tái chế trong trường hợp sử dụng màu sắc để phân biệt với Nhóm còn lại.
+                                        dán nhãn hoặc sơn in ấn trực tiếp ở phía ngoài bao bì (túi) hoặc thiết bị lưu chứa (thùng) để phân biệt loại chất thải. Nội dung trên nhãn dán hoặc nội dung được sơn/in ấn có dòng chữ “NHÓM CÒN LẠI”, “NHÓM CÓ KHẢ NĂNG TÁI SỬ DỤNG, TÁI CHẾ” hoặc thay thế bằng kí hiệu đối với “NHÓM CÓ KHẢ NĂNG TÁI SỬ DỤNG, TÁI CHẾ”
+                                        sử dụng túi thân thiện môi trường (ví dụ: túi dễ phân hủy sinh học) để chứa CHẤT THẢI RẮN SINH HOẠT sau phân loại. Hạn chế, tiến tới không sử dụng túi ni lông khó phân hủy để chứa CHẤT THẢI RẮN SINH HOẠT sau phân loại theo chương trình, kế hoạch và hướng dẫn của cơ quan nhà nước.
+                                        Căn cứ theo Quyết định 09/2021/QĐ-UBND của UBND TP.HCM và hướng dẫn phân loại rác tại nguồn theo công văn số 4507/STNMT-CTR của Sở Tài Nguyên và Môi trường Thành Phố Hồ Chí Minh.</p></li>
+                                </ul>
+                                </li>
+                                <li><div class="link">
+                                    Cách để lưu trữ chất thải rắn sinh hoạt sau khi đã phân loại?<i class="fa fa-chevron-down"></i></div>
+                                <ul class="submenu">
+                                    <li><p>- Chất thải rắn sinh hoạt sau phân loại phải được lưu giữ riêng biệt trong các thiết bị đã nêu chi tiết tại câu hỏi “Trang thiết bị để lưu giữ rác có yêu cầu gì không?”
+        
+                                        - Cá nhân, hộ gia đình, chủ nguồn thải Chất thải rắn sinh hoạt không chứa chất thải vượt quá dung tích của bao bì, thiết bị lưu chứa để tránh làm rách bao bì, rơi vãi chất thải và nước rác; đậy kín, vệ sinh thiết bị lưu chứa định kỳ để tránh phát sinh mùi hôi. Khu vực lưu giữ chất thải cần dọn dẹp, vệ sinh định kỳ để tránh làm nơi lưu trú của côn trùng, loài gặm nhấm.
+                                        
+                                        - Một số trường hợp khác:  
+                                        
+                                        chất thải thuộc Nhóm còn lại có đặc điểm sắc bén, nhọn (mảnh thủy tinh, sành sứ,...): Cá nhân, hộ gia đình, chủ nguồn thải sử dụng giấy báo, carton, vải vụn hoặc vật liệu tương tự quấn quanh chất thải trước khi bỏ vào bao bì (túi) hoặc thiết bị lưu chứa (thùng); thông báo trực tiếp hoặc gắn nhãn/viết chữ ( để cảnh báo cho người thu gom.
+                                        cá nhân, hộ gia đình, chủ nguồn thải Chất thải rắn sinh hoạt không chuyển giao Chất thải rắn sinh hoạt trực tiếp cho Chủ thu gom, vận chuyển Chất thải rắn sinh hoạt : ở phía ngoài bao bì (túi) hoặc thiết bị lưu chứa (thùng) có dấu hiệu phân biệt loại chất thải được lưu giữ.
+                                        cá nhân, hộ gia đình, chủ nguồn thải Chất thải rắn sinh hoạt chuyển giao Chất thải rắn sinh hoạt trực tiếp cho Chú thu gom, vận chuyển Chất thải rắn sinh hoạt : Thông báo cho cho Chủ thu gom, vận chuyển biết về việc chuyển giao Nhóm có khả năng tái sử dụng, tái chế (nếu có) để tiếp nhận và lưu giữ riêng.
+                                        cá nhân, hộ gia đình, chủ nguồn thải Chất thải rắn sinh hoạt có thực hiện phân loại và lưu giữ từng loại chất thải thuộc Nhóm có khả năng tái sử dụng, tái chế: khuyến khích có hình ảnh thể hiện loại chất thải (tham khảo Phụ lục 2 đính kèm Hướng dẫn này) bên ngoài thiết bị lưu chứa và có dòng chữ “NHÓM CÓ KHẢ NĂNG TÁI SỬ DỤNG, TÁI CHẾ” hoặc thay thế bằng ký hiệu đối với “NHÓM CÓ KHẢ NĂNG TÁI SỬ DỤNG, TÁI CHẾ”.
+                                        Căn cứ theo Quyết định 09/2021/QĐ-UBND của UBND TP.HCM và hướng dẫn phân loại rác tại nguồn theo công văn số 4507/STNMT-CTR của Sở Tài Nguyên và Môi trường Thành Phố Hồ Chí Minh.</p></li>
+                                </ul>
+                                </li>
+                                <li><div class="link">
+                                    Có bắt buộc phải phân loại rác thải không?<i class="fa fa-chevron-down"></i></div>
+                                    <ul class="submenu">
+                                        <li><p>Câu trả lời là CÓ.
+        
+                                            Bởi vì theo khoản 2 Điều 77 Luật Bảo vệ môi trường năm 2020.
+                                            
+                                            Cơ sở thu gom, vận chuyển chất thải rắn sinh hoạt: Có quyền từ chối thu gom, vận chuyển chất thải rắn sinh hoạt của hộ gia đình, cá nhân không phân loại, không sử dụng bao bì đúng quy định và thông báo cho cơ quan có thẩm quyền để kiểm tra, xử lý theo quy định của pháp luật.</p></li>
+                                    </ul>
+                                </li>
+                                <li><div class="link">
+                                    Không phân loại rác sẽ bị phạt bao nhiêu?<i class="fa fa-chevron-down"></i></div>
+                                    <ul class="submenu">
+                                        <li><p>Từ 01/01/2022 khi Luật Bảo vệ môi trường có hiệu lực. Người dân cần phải phân loại chất thải rắn sinh hoạt. Trường hợp không phân loại rác theo quy định sẽ bị phạt tới 20 triệu đồng. Cụ thể:
+        
+                                            Căn cứ khoản 4 điều 20 Nghị định 155/2016/NĐ-CP:
+                                            
+                                            Phạt tiền từ 15.000.000 đồng đến 20.000.000 đồng đối với hành vi không phân loại, không lưu giữ chất thải rắn sinh hoạt theo quy định; không ký hợp đồng hoặc không chuyển giao chất thải rắn sinh hoạt cho đơn vị có chức năng thu gom, vận chuyển và xử lý theo quy định.
+                                            Phạt tiền từ 20.000.000 đồng đến 25.000.000 đồng đối với hành vi không phân loại, không lưu giữ chất thải rắn công nghiệp thông thường theo quy định; không ký hợp đồng hoặc không chuyển giao chất thải rắn công nghiệp thông thường cho đơn vị có chức năng thu gom, vận chuyển và xử lý theo quy định; không báo cáo định kỳ về tình hình phát sinh, quản lý chất thải rắn công nghiệp thông thường cho cơ quan có thẩm quyền theo quy định.</p></li>
+                                    </ul>
+                                </li>
+                                <li><div class="link">
+                                    Ai quy định tần suất thu gom và giờ thu gom? 							<i class="fa fa-chevron-down"></i></div>
+                                    <ul class="submenu">
+                                        <li><p>Do Ủy ban nhân dân phường, xã, thị trấn xác định.
+        
+                                            Căn cứ theo Quyết định 09/2021/QĐ-UBND của UBND TP.HCM và hướng dẫn phân loại rác tại nguồn theo công văn số 4507/STNMT-CTR của Sở Tài Nguyên và Môi trường Thành Phố Hồ Chí Minh.</p></li>
+                                    </ul>
+                                </li>
+                                <li><div class="link">
+                                    Chủ nguồn thải có thể tự thỏa thuận chuyển giao được không?<i class="fa fa-chevron-down"></i></div>
+                                    <ul class="submenu">
+                                        <li><p>Câu trả lời là CÓ.
+        
+                                            Tùy thuộc đặc điểm đặc thù của mỗi khu vực dân cư, Ủy ban nhân dân phường, xã, thị trấn chủ trì, phối hợp với Chủ thu gom, vận chuyển chất thải rắn sinh hoạt và đại diện của các cá nhân, hộ gia đình, chủ nguồn thải chất thải rắn sinh hoạt (ví dụ: Trưởng khu phố, tổ trưởng tổ dân phố, ban quản lý chung cư,…) xác định thời gian, phương thức chuyển giao chất thải rắn sinh hoạt phù hợp với hiện trạng và quy định của Nhà nước.
+                                            
+                                            Căn cứ theo Quyết định 09/2021/QĐ-UBND của UBND TP.HCM và hướng dẫn phân loại rác tại nguồn theo công văn số 4507/STNMT-CTR của Sở Tài Nguyên và Môi trường Thành Phố Hồ Chí Minh.</p></li>
+                                    </ul>
+                                </li>
+                                <li><div class="link">
+                                    Tăng tần suất thu gom có phải trả thêm tiền không? 							<i class="fa fa-chevron-down"></i></div>
+                                    <ul class="submenu">
+                                        <li><p>Cá nhân, hộ gia đình, chủ nguồn thải chất thải rắn sinh hoạt có thể chủ động thỏa thuận với Chủ thu gom, vận chuyển chất thải rắn sinh hoạt để tăng tần suất thu gom tại nguồn so với tần suất do Ủy ban nhân dân phường, xã, thị trấn xác định. Thỏa thuận này được thống nhất trong hợp đồng cung ứng dịch vụ thu gom tại nguồn giữa các bên.
+        
+                                            Căn cứ theo Quyết định 09/2021/QĐ-UBND của UBND TP.HCM và hướng dẫn phân loại rác tại nguồn theo công văn số 4507/STNMT-CTR của Sở Tài Nguyên và Môi trường Thành Phố Hồ Chí Minh.</p></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                </main>
+                <footer>
+        
+                </footer>
+            </div>
+        </div>
+    </div>
+    
 
     <!-- <script src="/js/vanilla-tilt.js"></script>
     <script>
@@ -363,13 +579,85 @@
         window.onscroll = function() {
         var currentScrollPos = window.pageYOffset;
         if (prevScrollpos > currentScrollPos) {
-            document.querySelector(".header").style.top = "0";
+            document.querySelector(".header").style.top = "20px";
+            
         } else {
             document.querySelector(".header").style.top = "-100px";
+            
         }
         prevScrollpos = currentScrollPos;
         }
-        revScrollpos = currentScrollPos;      
+        revScrollpos = currentScrollPos; 
+    </script>
+    <!-- <script>
+        function scrollFooter(scrollY, heightFooter)
+{
+    console.log(scrollY);
+    console.log(heightFooter);
+
+    if(scrollY >= heightFooter)
+    {
+        $('footer').css({
+            'bottom' : '0px'
+        });
+    }
+    else
+    {
+        $('footer').css({
+            'bottom' : '-' + heightFooter + 'px'
+        });
+    }
+}
+
+$(window).load(function(){
+    var windowHeight        = $(window).height(),
+        footerHeight        = $('footer').height(),
+        heightDocument      = (windowHeight) + ($('.content').height()) + ($('footer').height()) - 20;
+
+    // Definindo o tamanho do elemento pra animar
+    $('#scroll-animate, #scroll-animate-main').css({
+        'height' :  heightDocument + 'px'
+    });
+
+    // Definindo o tamanho dos elementos header e conteúdo
+    $('header').css({
+        'height' : windowHeight + 'px',
+        'line-height' : windowHeight + 'px'
+    });
+
+    $('.wrapper-parallax').css({
+        'margin-top' : windowHeight + 'px'
+    });
+
+    scrollFooter(window.scrollY, footerHeight);
+
+    // ao dar rolagem
+    window.onscroll = function(){
+        var scroll = window.scrollY;
+
+        $('#scroll-animate-main').css({
+            'top' : '-' + scroll + 'px'
+        });
+        
+        $('header').css({
+            'background-position-y' : 50 - (scroll * 100 / heightDocument) + '%'
+        });
+
+        scrollFooter(scroll, footerHeight);
+    }
+});
+    </script> -->
+    <script>
+        // List
+
+        const list = document.querySelectorAll('.list');
+        function activeLink() {
+            list.forEach((item) =>
+            item.classList.remove('active'));
+            this.classList.add('active');
+        }
+        list.forEach((item) =>
+        item.addEventListener('click', activeLink))
     </script>
     <!-- Fonts -->
     <script src="https://unicons.iconscout.com/release/v4.0.8/script/monochrome/bundle.js"></script>
